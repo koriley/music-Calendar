@@ -8,10 +8,11 @@ and open the template in the editor.
     Author     : koriley
 */
 $orange: #EF4F23; 
+$black: #000000;
 
 .borderless td, .borderless th {
     border: none !important;
 }
 .borderless{
-    border-bottom:1px solid $orange;
+    border-bottom:1px solid $black;
 } 
