@@ -64,7 +64,7 @@ function drawMonth(month, year) {
     var numDay = getNumberofDays(month, year);
 //console.log(startDay);
 //console.log(month+'/'+day+'/'+year);
-    console.log(numDay);
+    //console.log(numDay);
 //jQuery('.calendar').html(month+'|'+day+'|'+year+' month start day='+startDay+'<br/>');
 //build previous month days we will need to fill these in later
     var weekdays = 1;
