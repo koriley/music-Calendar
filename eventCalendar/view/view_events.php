@@ -7,7 +7,7 @@
  */
 
 ?>
-<div class="eventsMother">
+<div class="eventsMother"></div>
    
 <script>
     
