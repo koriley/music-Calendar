@@ -15,8 +15,48 @@ and open the template in the editor.
 
 .headImage {
   max-width: 100%;
-  margin-top: 50px; }
+  margin-top: 75px; }
   .headImage img {
     max-width: 100%; }
+
+.navbar .menu {
+  text-transform: capitalize;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 32px;
+  font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover {
+  text-decoration: none;
+  color: #ffffff; }
+.navbar .searchControl {
+  display: none; }
+
+.singleEvent {
+  text-align: center; }
+  .singleEvent h1 {
+    border-bottom: 1px solid black; }
+  .singleEvent .location {
+    margin-left: 15%;
+    text-align: left; }
+  .singleEvent .desc {
+    text-align: left;
+    margin-top: 5px;
+    border-top: 1px solid black; }
+  .singleEvent img {
+    width: 400px; }
+
+.todayColor {
+  background-color: #000000;
+  color: #ffffff; }
+
+.NTM {
+  cursor: pointer; }
+
+.rightSide, .leftSide {
+  margin-top: 5px; }
 
 /*# sourceMappingURL=main.css.map */
