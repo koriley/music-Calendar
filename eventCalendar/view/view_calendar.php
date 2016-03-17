@@ -9,6 +9,7 @@
     <button id="prevMonth" style="display:inline-block;"><</button>
     <div id="monthName" style="display:inline-block;"></div>
     <button id="nextMonth" style="display:inline-block;">></button>
+    <button id="today" style="display:inline-block;">Today</button>
     <div class="currentMonth">
         <div class="dayHeading">
             <table class="table calTable" style="width:100%">
@@ -93,6 +94,8 @@ var dayName = weekday[dayToName];
  });
     
     
-
+jQuery('#today').click(function(){
+    window.location.href = "http://gonsave.com/musicCal";
+});
    
 </script>
