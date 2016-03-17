@@ -9,6 +9,9 @@ and open the template in the editor.
 */
 $orange: #EF4F23; 
 $black: #000000;
+$todayColor: #000000;
+$todayText: #ffffff;
+$menuTextColor: #ffffff;
 
 .borderless td, .borderless th {
     border: none !important;
@@ -19,9 +22,61 @@ $black: #000000;
 
 .headImage{
     max-width:100%;
-    margin-top:50px;
+    margin-top:75px;
    img{
        max-width:100%;
       
     }
+}
+.navbar{
+    .menu{
+        text-transform: capitalize;
+        display:inline-block;
+        color:$menuTextColor;
+        font-size: 25px;
+        line-height: 32px;
+        font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+        //margin-right:20px;
+        cursor: pointer;
+        padding-top: 15px;
+    padding-bottom: 15px;
+    }
+   .navbar-nav>li>a,.navbar-nav>li>a:hover{
+        text-decoration:none;
+        color:$menuTextColor;
+    }
+    .searchControl{
+        display:none;
+    }
+}
+.singleEvent{
+    text-align:center;
+    h1{
+        //text-align:center;
+        border-bottom:1px solid black;
+    }
+    .location{
+        margin-left:15%;
+        text-align:left;
+    }
+    .desc{
+        text-align:left;
+        margin-top:5px;
+        border-top:1px solid black;
+    }
+    img{
+        width:400px;
+    }
+}
+
+.todayColor{
+    background-color:$todayColor;
+    color:$todayText;
+}
+.NTM{
+    cursor: pointer;
+}
+
+.rightSide, .leftSide{
+    margin-top:5px;
 }
