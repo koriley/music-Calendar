@@ -89,7 +89,7 @@ function drawMonth(month, year) {
             weekNum++;
         }
         if ((weekdays > 1) && (weekdays <= 7)) {
-            jQuery(".week_" + weekNum).append("<td style='width:" + cellWidth + "'><div data-day='" + k + "' data-dayName='" + weekday[weekdays] + "' class='NTM calDay' style='width:100%; height:25px;'>" + k + "</div></td>");
+            jQuery(".week_" + weekNum).append("<td ><div data-day='" + k + "' data-dayName='" + weekday[weekdays] + "' class='NTM calDay' style='width:100%; height:25px;'>" + k + "</div></td>");
             weekdays++;
 
         }
@@ -98,7 +98,10 @@ function drawMonth(month, year) {
             weekdays++;
         }
 
-
+if(day === k){
+    jQuery('div[data-day="'+k+'"').parent('td').addClass('todayColor');
+    jQuery('div[data-day="'+k+'"').parent('td').addClass('today');
+}
 
     }
     jQuery('.calDay').click(function() {
@@ -109,6 +112,11 @@ function drawMonth(month, year) {
         jQuery('.leftSide').load('eventCalendar/view/view_events.php');
         //alert(day);
         //console.log(month+'/'+day+'/'+year);
+        jQuery('td').each(function(){
+            jQuery(this).removeClass('todayColor');
+        });
+        jQuery('div[data-day="'+day+'"').parent('td').addClass('todayColor');
+        
     });
 
 
