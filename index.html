@@ -43,9 +43,9 @@
                         <li class="menu search"><a href="#">Venue</a></li>
                         <li class="menu search"><a href="#">Today</a></li>
                         <li class="menu search"><a href="#">Search</a></li>
-                        
+
                     </ul>
-                    
+
                 </div>
                 <div class="searchDrop"></div>
                 <div class="toHover"></div>
@@ -89,17 +89,19 @@
             jQuery('.search').click(function (e) {
                 e.preventDefault;
                 var iAm = jQuery(this).children().html();
-jQuery('.searchControl').each(function(){
-    jQuery(this).is(':visible', function(){
-        console.log('here');
-         jQuery(this).hide();
-    });
-   
-});
-                jQuery('.searchControl input').attr('placeholder', iAm);
+                jQuery('.searchControl').each(function () {
+                    jQuery(this).is(':visible', function () {
+                        console.log('here');
+                        jQuery(this).hide();
+                    });
 
+                });
+                jQuery('.searchControl input').attr('placeholder', iAm);
                 jQuery('.searchControl').toggle();
             });
+            
+            jQuery('.toHover').load('eventCalendar/control/control_genre.php');
+            
             //we are going to look to see if the page was passed and id, if it was then the left side is
             //going to load just that event.
             var eventID = getUrlParameter('eventNum');
