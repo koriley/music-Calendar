@@ -34,4 +34,11 @@ class event{
         $res = $dbCon->select($sql);
         return $res;
     }
+    
+    function getGenre($dbCon){
+        $sql = "SELECT DISTINCT substring_index(genre, ',', 1) as myGenre FROM events ORDER BY genre ASC";
+        $res = $dbCon->select($sql);
+        
+        return $res;
+    }
 }
